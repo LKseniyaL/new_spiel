@@ -1,0 +1,18 @@
+.button{
+    font-size: 40px;
+    padding: 10px 10px;
+    border: 4px solid #FDE49B;
+    border-radius: 20px;
+    width: 400px;
+    // color: #FDE49B;
+    color: #FFF1C5;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.button:hover{
+    text-shadow: 3px 3px 3px #166D71;
+    box-shadow: 4px 4px 4px #166D71;
+
+}

@@ -1,0 +1,81 @@
+@keyframes slideInRight {
+    from{
+        transform: translateY(-300%) translateX(-15%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInLeft {
+    from{
+        transform: translateY(-300%) translateX(15%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes closeBtn {
+    from{
+        transform: translateY(-200%) translateX(100%);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(40%) translateX(-50%);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.mainBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_linkBtn{
+        position: absolute;
+    }
+    &_close{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        font-size: 50px;
+        border-radius: 50%;
+        padding-bottom: 10px;
+        top: -20px;
+        right: -200px;
+        line-height: 0;
+        color: #0a1429;
+        border: 3px solid #FDE49B;
+        background: #f7f1e3;
+        animation: closeBtn 1.5s forwards;
+    }
+    &_btns{
+        display: flex;
+        gap: 90px;
+        margin-top: 200px;
+
+        &_btnLeft{
+            width: 270px;
+            font-size: 30px;
+            font-weight: 500;
+            font-style: normal;
+            animation: slideInLeft 1.5s forwards;
+        }
+        &_btnRight{
+            width: 270px;
+            font-size: 30px;
+            font-weight: 500;
+            font-style: normal;
+            animation: slideInRight 1.5s forwards;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #f7f1e3;
+}
+
+.App {  
+  position: relative; 
+  /* z-index: 1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 100vh;
+  font-size: 60px;
+  text-align: center;
+  background-color: #0d1937;
+}
+/* .aa{
+  color: #FDE49B;
+}
+.a{
+  color: #D1A655;
+}
+.б{
+  color: #166D71;
+  color: #19768C;
+}
+.b{
+  color:#7D7D7D;
+}
+.m{
+  color: #BB823A;
+} */

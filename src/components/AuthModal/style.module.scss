@@ -1,0 +1,67 @@
+.modal{
+    position: fixed;
+    left: 38%;
+    top: 50%;
+    // transform: translateX(50%);
+    transform: translateY(-50%);
+    padding: 100px;
+    background-color: #0a1429;
+    width: 500px;
+    min-height: 400px;
+    border-radius: 40px;
+
+    h2{
+        color: wheat;
+        font-size: 40px;
+        margin-top: -45px;
+        margin-bottom: 40px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        input{
+            height: 40px;
+            border-radius: 10px;
+            padding-left: 20px;
+            border: none;
+            border: 1px solid wheat;
+            background-color: #cac9bc;
+        }
+        button{
+            cursor: pointer;
+            font-size: 20px;
+            padding: 10px 10px;
+            border: 2px solid wheat;
+            border-radius: 20px;
+            width: 300px;
+            font-weight: bold;
+            font-style: italic;
+            margin-bottom: 40px;
+            background-color: #FFF1C5;
+            color: #0a1429;
+            border: 2px solid wheat;
+        }
+    }
+    &_closeBtn{
+        cursor: pointer;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        // border-radius: 50%;
+        background-color: transparent;
+        border: none;
+        top: 10px;
+        right: 10px;
+        color: #D1A655;
+        animation: closeBtn 1.5s forwards;
+    }
+    &_switchBtn{
+        cursor: pointer;
+        color: wheat;
+        font-size: 20px;
+        text-align: center;
+    }
+}

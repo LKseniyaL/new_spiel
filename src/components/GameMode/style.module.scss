@@ -1,0 +1,42 @@
+ @import '../../front';
+
+ @keyframes btn1 {
+    from{
+        transform: translateY(300%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes btn2 {
+    from{
+        transform: translateY(400%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.gameMode{
+    &_title{
+        color: $title_color;
+        font-weight: $title_weight;
+        margin: 60px;
+    }
+    &_blockBths{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+    }
+    &_btn1{
+        animation: btn1 1.5s forwards;
+    }
+    &_btn2{
+        animation: btn2 2s forwards;
+        // animation-delay: 1s;
+    }
+}
